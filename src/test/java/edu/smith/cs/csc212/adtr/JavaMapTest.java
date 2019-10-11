@@ -99,7 +99,7 @@ public class JavaMapTest {
 		Remove.put("Your Score",30);
 		Remove.put("T's Score", 20);
 		Remove.put("L's Score", 20);
-		assertIntEq(Remove.remove("Your Score"), 30);
+		assertEquals((int) Remove.remove("Your Score"), 30);
 		//assertEquals(Remove.size()==7, false);
 		
 		

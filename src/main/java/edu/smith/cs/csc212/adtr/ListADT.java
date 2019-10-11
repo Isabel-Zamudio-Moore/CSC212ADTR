@@ -22,12 +22,17 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * @return true if this list is empty.
 	 */
 	public abstract boolean isEmpty();
-
+	//List <String> Empty= new ArrayList();
+	//return (this.size() ==0);
+	
 	/**
 	 * The size of this list.
 	 * 
 	 * @return the size of the list or number of items.
 	 */
+	
+	//return this.data();
+	
 	public abstract int size();
 
 	/**
@@ -36,6 +41,8 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * @param index - the index; from 0 to size() inclusive.
 	 * @param value - the value to put in the list.
 	 */
+	//return this.data.l
+	
 	public abstract void setIndex(int index, ItemType value);
 
 	/**
@@ -44,6 +51,10 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * @param index - the item index to retrieve.
 	 * @return the value stored at that position.
 	 */
+	
+	
+	//return this.value;
+	
 	public abstract ItemType getIndex(int index);
 
 	/**
@@ -51,6 +62,8 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * 
 	 * @return this.getIndex(0);
 	 */
+	//return this.getIndex(0);
+	
 	public abstract ItemType getFront();
 
 	/**
@@ -58,6 +71,8 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * 
 	 * @return this.getIndex(this.size()-1);
 	 */
+	//return 
+	
 	public abstract ItemType getBack();
 
 	/**
@@ -66,6 +81,8 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * @param index - a number from 0 to size (inclusive).
 	 * @param value - the value to insert into the list.
 	 */
+	//return
+	
 	public abstract void addIndex(int index, ItemType value);
 
 	/**
@@ -73,6 +90,8 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * 
 	 * @param value - the item to add.
 	 */
+	//return
+	
 	public abstract void addFront(ItemType value);
 
 	/**
@@ -80,6 +99,8 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * 
 	 * @param value - the item to add.
 	 */
+	//return
+	
 	public abstract void addBack(ItemType value);
 
 	/**
@@ -88,6 +109,8 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * @param index - a number from 0 to size (exclusive).
 	 * @return the value removed.
 	 */
+	//return
+	
 	public abstract ItemType removeIndex(int index);
 
 	/**
@@ -95,6 +118,8 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * 
 	 * @return the value removed.
 	 */
+	//return
+	
 	public abstract ItemType removeBack();
 
 	/**
@@ -102,13 +127,21 @@ public abstract class ListADT<ItemType> implements Iterable<ItemType> {
 	 * 
 	 * @return the value removed.
 	 */
+	//return
+	
 	public abstract ItemType removeFront();
 
 	
 	/**
 	 * If this list is empty, throw an error; useful for implementing classes.
 	 */
-	protected void checkNotEmpty() {
+	//return
+	
+	/**
+	 * Check if list is empty
+	 * @return error if list isn't empty
+	 **/
+	 protected void checkNotEmpty() {
 		if (this.isEmpty()) {
 			throw new EmptyListError();
 		}

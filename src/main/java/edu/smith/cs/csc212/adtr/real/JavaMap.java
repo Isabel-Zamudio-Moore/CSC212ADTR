@@ -53,7 +53,10 @@ public class JavaMap<K,V> extends MapADT<K,V> {
 
 	@Override
 	public V remove(K k) {
-		return this.remove(k);
+		// Fixed error of not removing
+		//from our given map and returning
+		//the key's value
+		return this.data.remove(k);
 	}
 
 	@Override
