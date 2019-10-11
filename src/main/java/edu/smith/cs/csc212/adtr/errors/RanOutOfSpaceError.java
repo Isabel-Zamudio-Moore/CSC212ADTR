@@ -1,3 +1,5 @@
+// Citation: Starter Code from https://github.com/jjfiv/CSC212ADTR
+
 package edu.smith.cs.csc212.adtr.errors;
 
 /**
